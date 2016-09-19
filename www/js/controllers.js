@@ -41,14 +41,14 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('SpamCtrl', function($scope) {
-  $scope.spams = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+.controller('SpamListCtrl', function($scope) {
+  $scope.spamlist = [
+    { title: 'Mail 1', id: 1 },
+    { title: 'Mail 2', id: 2 },
+    { title: 'Mail 3', id: 3 },
+    { title: 'Mail 4', id: 4 },
+    { title: 'Mail 5', id: 5 },
+    { title: 'Mail 6', id: 6 }
   ];
 })
 

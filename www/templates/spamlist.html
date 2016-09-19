@@ -1,0 +1,9 @@
+<ion-view view-title="Spam List">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="spam in spamlist" href="#/app/spamlist/{{spam.id}}">
+        {{spam.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

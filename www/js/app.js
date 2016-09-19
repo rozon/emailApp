@@ -49,25 +49,25 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-    .state('app.spam', {
-      url: '/spam',
+    .state('app.spamlist', {
+      url: '/spamlist',
       views: {
         'menuContent': {
-          templateUrl: 'templates/spam.html',
-          controller: 'SpamCtrl'
+          templateUrl: 'templates/spamlist.html',
+          controller: 'SpamListCtrl'
         }
       }
     })
 
-  .state('app.single', {
-    url: '/playlists/:playlistId',
+  .state('app.spam', {
+    url: '/spamlist/:spamId',
     views: {
       'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
+        templateUrl: 'templates/spam.html',
+        controller: 'SpamCtrl'
       }
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/inbox');
+  $urlRouterProvider.otherwise('/app/spamlist');
 });
