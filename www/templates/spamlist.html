@@ -1,9 +1,14 @@
 <ion-view view-title="Spam List">
   <ion-content>
-    <ion-list>
+    <ion-list show-delete="shouldShowDelete">
       <ion-item ng-repeat="spam in spamlist" href="#/app/spamlist/{{spam.id}}">
+      	<ion-delete-button class="ion-minus-circled"></ion-delete-button>
         {{spam.title}}
+
       </ion-item>
+       <ion-toggle ng-model="shouldShowDelete">
+  Delete Item
+</ion-toggle>
     </ion-list>
   </ion-content>
 </ion-view>

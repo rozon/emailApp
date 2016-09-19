@@ -1,9 +1,14 @@
 <ion-view view-title="Outbox List">
   <ion-content>
-    <ion-list>
+    <ion-list show-delete="shouldShowDelete">
       <ion-item ng-repeat="outbox in outboxlist" href="#/app/outboxlist/{{outbox.id}}">
+      	<ion-delete-button class="ion-minus-circled"></ion-delete-button>
         {{outbox.title}}
+
       </ion-item>
+       <ion-toggle ng-model="shouldShowDelete">
+  Delete Item
+</ion-toggle>
     </ion-list>
   </ion-content>
 </ion-view>

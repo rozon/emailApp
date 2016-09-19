@@ -1,9 +1,14 @@
 <ion-view view-title="Inbox List">
   <ion-content>
-    <ion-list>
+    <ion-list show-delete="shouldShowDelete">
       <ion-item ng-repeat="inbox in inboxlist" href="#/app/inboxlist/{{inbox.id}}">
+      	<ion-delete-button class="ion-minus-circled"></ion-delete-button>
         {{inbox.title}}
+
       </ion-item>
+       <ion-toggle ng-model="shouldShowDelete">
+  Delete Item
+</ion-toggle>
     </ion-list>
   </ion-content>
 </ion-view>
