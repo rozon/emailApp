@@ -1,0 +1,9 @@
+<ion-view view-title="Outbox List">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="outbox in outboxlist" href="#/app/outboxlist/{{outbox.id}}">
+        {{outbox.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

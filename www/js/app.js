@@ -52,11 +52,22 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
-  .state('app.outbox', {
-      url: '/outbox',
+  .state('app.outboxlist', {
+      url: '/outboxlist',
       views: {
         'menuContent': {
-          templateUrl: 'templates/outbox.html'
+          templateUrl: 'templates/outboxlist.html',
+          controller: 'OutboxListCtrl'
+        }
+      }
+    })
+
+  .state('app.outbox', {
+      url: '/outboxlist/:outboxId',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/outbox.html',
+          controller: 'OutboxCtrl'
         }
       }
     })
