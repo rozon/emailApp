@@ -53,4 +53,19 @@ angular.module('starter.controllers', [])
 })
 
 .controller('SpamCtrl', function($scope, $stateParams) {
-});
+})
+
+.controller('InboxListCtrl', function($scope) {
+  $scope.inboxlist = [
+    { title: 'Mail 1', id: 1 },
+    { title: 'Mail 2', id: 2 },
+    { title: 'Mail 3', id: 3 },
+    { title: 'Mail 4', id: 4 },
+    { title: 'Mail 5', id: 5 },
+    { title: 'Mail 6', id: 6 }
+  ];
+})
+
+.controller('InboxCtrl', function($scope, $stateParams) {
+})
+;

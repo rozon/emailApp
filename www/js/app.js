@@ -32,11 +32,22 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.inbox', {
-    url: '/inbox',
+  .state('app.inboxlist', {
+    url: '/inboxlist',
     views: {
       'menuContent': {
-        templateUrl: 'templates/inbox.html'
+        templateUrl: 'templates/inboxlist.html',
+        controller: 'InboxListCtrl'
+      }
+    }
+  })
+
+  .state('app.inbox', {
+    url: '/inboxlist/:inboxId',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/inbox.html',
+        controller: 'InboxCtrl'
       }
     }
   })

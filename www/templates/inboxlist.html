@@ -1,0 +1,9 @@
+<ion-view view-title="Inbox List">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="inbox in inboxlist" href="#/app/inboxlist/{{inbox.id}}">
+        {{inbox.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
